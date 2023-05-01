@@ -1,1 +1,55 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+
+// ? Bold
+@font-face {
+  font-family: IRANSansWeb_Bold;
+  src: url("./assets/fonts/iransans/bold/IRANSansWeb_Bold.woff2") format("woff2");
+  font-display: swap;
+}
+
+@mixin IRANSansWeb_Bold {
+  font-family: IRANSansWeb_Bold;
+  @extend .persian-number;
+}
+
+
+// ? Medium
+@font-face {
+  font-family: IRANSansWeb_Medium;
+  src: url("./assets/fonts/iransans/medium/IRANSansWeb_Medium.woff2") format("woff2");
+  font-display: swap;
+}
+
+@mixin IRANSansWeb_Medium {
+  font-family: IRANSansWeb_Medium;
+  @extend .persian-number;
+}
+
+
+// ? light
+@font-face {
+  font-family: IRANSansWeb_Light;
+  src: url("./assets/fonts/iransans/light/IRANSansWeb_Light.woff2") format("woff2");
+  font-display: swap;
+}
+
+@mixin IRANSansWeb_Light {
+  font-family: IRANSansWeb_Light;
+  @extend .persian-number;
+}
+
+*{
+  box-sizing: border-box;
+  @include IRANSansWeb_Medium;
+}
+
+.persian-number {
+  -moz-font-feature-settings: "ss02";
+  -webkit-font-feature-settings: "ss02";
+  font-feature-settings: "ss02";
+}

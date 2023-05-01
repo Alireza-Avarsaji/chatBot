@@ -1,0 +1,76 @@
+::ng-deep {
+  .mat-drawer {
+    width: 340px;
+    height: 60%;
+    bottom: 0px;
+    top: unset !important;
+  }
+}
+
+header {
+  height: 50px;
+  box-shadow: 0 0 10px;
+  background-color: #3f51b5;
+
+  button {
+    color: white;
+  }
+}
+
+.chat-screen {
+  height: calc(100% - 110px);
+  overflow-y: auto;
+}
+
+.editor {
+  background-color: #f2f5f8;
+  height: 60px;
+  box-shadow: 0px -1px 3px 0px rgba(0, 0, 0, 0.12),
+    0px 1px 2px 0px rgba(0, 0, 0, 0.24);
+
+  textarea {
+    background: white;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    background-clip: padding-box;
+    overflow: auto;
+    resize: none;
+    caret-color: gray;
+    height: 80%;
+    box-shadow: 0 1px 3px 0 rgba(0,0,0,0.1), 0 1px 2px -1px rgba(0,0,0,0.1);
+
+    // transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  }
+
+  textarea::placeholder {
+    color: #D0D0D0;
+    position: relative;
+
+    // transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  }
+}
+
+.scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.send-btn {
+  transform: rotate(180deg);
+}
+
+.sent-message {
+  background-color: #1E90FF;
+  color: white;
+  border-radius: 8px;
+}
+
+.recieved-message {
+  background-color: #E8E8E8;
+  color: black;
+  border-radius: 8px;
+}
+
+// .sss > :first-child {
+//   margin-top: auto;
+// }
